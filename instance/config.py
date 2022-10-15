@@ -1,0 +1,5 @@
+DEBUG=True
+FLASK_ENVIRONMENT='development'
+SECRET_KEY='gf5443565'
+SQLALCHEMY_DATABASE_URI='mysql+mysqlconnector://root@localhost/dev'
+SQLALCHEMY_TRACK_NOTIFICATIONS=False

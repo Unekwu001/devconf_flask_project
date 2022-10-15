@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+        <head>
+                <title>
+                       message us
+                </title>
+                    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+                <style>
+                        #contain{background-image:url('/static/images/twitter.pn');background-repeat:no-repeat;background-size:cover}
+                        #c1,#c4{height:20vh;border:1px solid black;text-align:center}
+                        #c2{height:60vh;border:1px solid black;text-align:center}
+                        #c3{height:60vh;border:1px solid black;background-color:grey;color:white;text-align:center}
+                        a{text-decoration:none}
+                        div ul li{border-radius:20px;background-color:orange;text-align:center;padding:2%;margin:10%}
+                        form{height:inherit;width:inherit}
+                </style>
+        </head>
+        <body>
+                <div class="container-fluid"id="contain">
+                        <div class="row">
+                                <div class="col-12 mt-4" id=c1>
+				
+					<form method="post" action="{{url_for('submit')}}">
+						<label>first name: </label>
+						<input type="text" name="fname" placeholder="first name" class="form-control-sm"><br>
+						<label>last name: </label>
+                                                <input type="text" name="lname" placeholder="last name" class="form-control-sm"><br>
+
+						<label>email: </label>
+						<input type="" name="email" placeholder="email" class="form-control-sm"><br>
+						<label>password: </label>
+                                                <input type="password" name="password" placeholder="name" class="form-control-sm"><br>
+
+						<button type="submit" class="form-control-sm"> Submit</button>
+					</form>
+
+				</div>
+
+                </div>
+
+        </body>
+</html>
+
+        
