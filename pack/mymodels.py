@@ -1,5 +1,5 @@
 import datetime
-from pkg import db
+from pack import db
 
 
 class State(db.Model): 

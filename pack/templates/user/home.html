@@ -25,7 +25,7 @@
 
       #content{
          background-color: #a6754b;
-         background-image:url("imgs/image4.jpg");
+         background-image:url("/static/imgs/image4.jpg");
          background-repeat: no-repeat;
          background-size: cover;
          min-height:500px;
@@ -55,21 +55,22 @@
             <img src = "/static/imgs/logo2.png" height="120px" >
          </div>
          <div class = "col-md-9 mt-5" style="text-align: end;" id="header">
-            <a href = "#" class="me-3">Create Profile</a>
-	    <a href = "{{url_for('user_login')}}" class="me-3">Login</a>
+            <a href = "{{url_for('user_signup')}}" class="me-3">Create Profile</a>
+            <a href = "#" class="me-3">Login</a>
             <a href = "#">Donate</a>
          </div>
       </div>
       <div class="row position-relative mb-5">
          <div class="col-md-12 position-relative" id="content">
-            <img src="imgs/image6.png" class="mb-0">
+            <img src="/static/imgs/image6.png" class="mb-0">
             <h1 style="font-family:'Courier New', Courier, monospace;">MOAT DEV FEST 2022</h1>
             <p style="font-size:1rem;">Organized by Python Developers Class Cohort 22</p>
             <div class="col-md-4" id="innercontentdiv">
                <p class="p-3" >Introducing the largest Developer's Conference across sub-Sahara Africa! A full-stack, tech-obsessed conference full of fun, code-loving humans who share and learn together.</p>
                <p>October 28th, 2022</p>
                <p class="p-2">Lagos,Nigeria</p>
-              <button class="col-md-9 mb-2 btn" style="background-color:#EEB30D;"><a href="user_login.html" style="color:rgb(#210F04);display: inline;font-size: 1rem;">Make a free account and register to attend the conference<i class="fa-solid fa-arrow-right ms-1"></i></a>
+               <button class="col-md-9 mb-2 btn" style="background-color:#EEB30D;""><a href="user_login.html" style="color: #210F04; display: inline;
+                  font-size: 1rem;">Make a free account and register to attend the conference<i class="fa-solid fa-arrow-right ms-1"></i></a>
                </button>
             </div>
          </div>
@@ -102,7 +103,7 @@
          <div class="col-md" style="color:#210F04; font-weight: bold;" >
             <img src="/static/imgs/image7.png" >
             <p>Moat Dev Fest is a full-stack, tech-obsessed conference full of fun, code-loving humans who share and learn together. With over 30,000 people directly and in-directly impacted since it's inception in Lagos, Nigeria by the Python Developers of Cohort 22 Moat Academy, Moat DevFest 2022 promises to be bigger, better and is going to feature physical, in-person audiences.</p>
-            <a href="/static/http://moatacademy.com">More about Moat Academy <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="http://moatacademy.com">More about Moat Academy <i class="fa-solid fa-arrow-right"></i></a>
          </div> 
       </div>
       

@@ -10,11 +10,11 @@
 <body>
   <div class="sidebar">
     <div class="logo-details ">
-      <a href="/static/home.html"><img src="/static/imgs/logo2.png"  alt="event logo" class="img-fluid" width="200" height="90"></a>
+      <a href="home.html"><img src="/static/imgs/logo2.png"  alt="event logo" class="img-fluid" width="200" height="90"></a>
     </div>
       <ul class="nav-links">
         <li>
-          <a href="/static/user_dashboard.html" class="active">
+          <a href="user_dashboard.html" class="active">
             <i class="fa-solid fa-house"></i>
             <span class="links_name">Home</span>
           </a>
@@ -44,7 +44,7 @@
           </a>
         </li>
         <li class="log_out">
-          <a href="#">
+          <a href="{{url_for('user_logout')}}">
             <i class="fa-solid fa-check"></i>
             <span class="links_name">Log out</span>
           </a>
@@ -70,17 +70,17 @@
     <div class="home-content">
       
       <div class="mb-3">
-        <h1 class="me-5 mb-5" style="font-size: 4rem;">Welcome, User!</h1>
+        <h1 class="me-5 mb-5" style="font-size: 4rem;">Welcome, {{data.user_fname}}!</h1>
         
       </div>
       <div>
-        <button class="col-md-9" style="background-color:#EEB30D;"><a href="/static/user_login.html" style="color: #210F04; text-decoration: none;font-size: 1rem; padding:15%;margin-top:10%;" >Register to attend Moat DEV FEST 2022<i class="fa-solid fa-arrow-right ms-1"></i></a>
+        <button class="col-md-9" style="background-color:#EEB30D;""><a href="user_login.html" style="color: #210F04; text-decoration: none;font-size: 1rem; padding:15%;margin-top:10%;" >Register to attend Moat DEV FEST 2022<i class="fa-solid fa-arrow-right ms-1"></i></a>
         </button>
       </div>
       
     </div>
   </section>
-  <script type='/static/text/javascript' src='js/jquery-3.6.1.min.js'></script>
+  <script type='text/javascript' src='/static/js/jquery-3.6.1.min.js'></script>
   <script>
     
  
